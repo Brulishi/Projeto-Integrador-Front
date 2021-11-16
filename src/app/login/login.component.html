@@ -4,10 +4,11 @@
 
         <div class="row d-flex justify-content-center align-items-center" id="img-bg">
 
-            <div class="col-md-6 img-thumbnail mask-white-rodape p-5">
+            <div class="col-md-6 mt-5 mb-5">
 
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-6">
+                <div class="row d-flex justify-content-center img-thumbnail mask-white-rodape p-5">
+
+                    <div class="col-md-10">
     
                         <h1 class="text-center">Entrar</h1>
     
@@ -40,3 +41,88 @@
     </div>
 
 </div>
+
+
+
+                                        <!-- LOGIN E CADASTRO ESTILIZADO -->
+
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+
+<main>
+  <section class="container">
+    <!-- login -->
+    <div class="login">
+
+      <i class="fas fa-sign-in-alt"></i>
+      <strong>Bem-vindo</strong>
+      <span>Faça login na sua conta!</span>
+
+      <form>
+        <fieldset>
+          <div class="form">
+            <div class="form-row">
+              <i class="fas fa-user"></i>
+              <label class="form-label" for="input" >Nome</label>
+              <input [(ngModel)]='usuarioLogin.email' type="text" class="form-text" placeholder="Seu nome">
+            </div>
+            <div class="form-row">
+              <i class="fas fa-eye"></i>
+              <label class="form-label" for="input">Senha</label>
+              <input [(ngModel)]='usuarioLogin.senha' type="text" class="form-text" placeholder="Sua senha">
+            </div>
+            <!-- <div class="form-row bottom">
+              <div class="form-check">
+                <input type="checkbox" id="remenber" name="remenber" value="remenber">
+                <label for="remenber">remenber me?</label>
+              </div>
+              <a href="" class="forgot">forgot password?</a>
+            </div> -->
+            <div class="form-row button-login">
+              <button class="btn btn-login " (click)='entrar()'>Entrar <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- register -->
+    <div class="register">
+      <i class="fas fa-user-circle"></i>
+      <strong>Registre-se!</strong>
+      <form>
+        <fieldset>
+          <div class="form">
+            <div class="form-row">
+              <i class="fas fa-user"></i>
+              <label class="form-label" for="input" >Nome</label>
+              <input type="text" class="form-text" placeholder="Seu nome">
+            </div>
+            <div class="form-row">
+              <i class="fas fa-envelope"></i>
+              <label class="form-label" for="input">E-mail</label>
+              <input type="text" class="form-text" placeholder="Seu e-mail">
+            </div>
+            <div class="form-row">
+              <i class="fas fa-lock"></i>
+              <label class="form-label" for="input">Senha</label>
+              <input type="text" class="form-text" placeholder="Sua senha">
+            </div>
+            <div class="form-row button-login">
+              <button class="btn btn-login" >Cadastrar <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+  </section>
+</main>
+
+   <div style="display: block; margin: 0 auto; text-align: center; margin-top: 50px">
+      <script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCpXTlrDWlpN46PKieJ-FcPw" data-layout="full" data-count="hidden"></div>
+   </div>
+
+
