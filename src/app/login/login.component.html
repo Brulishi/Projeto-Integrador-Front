@@ -58,7 +58,7 @@
 
 
 
-<div class="container-fluid" id="img-bg">
+<!-- <div class="container-fluid" id="img-bg">
 
   <div class="row d-flex justify-content-center vh-100">
 
@@ -100,4 +100,115 @@
     
 
   </div>
-</div>
+</div> -->
+
+
+                           <!-- ESTILIZAÇÃO 2 PERSONALIZADA -->
+
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+
+<main>
+  <section class="container">
+    <!-- login -->
+    <div class="login">
+
+      <i class="fas fa-sign-in-alt"></i>
+      <strong>Welcome!</strong>
+      <span>Sign in to your account</span>
+
+      <form>
+        <fieldset>
+          <div class="form">
+            <div class="form-row">
+              <i class="fas fa-user"></i>
+              <label for="email" class="form-label" for="input" >E-mail</label>
+              <input [(ngModel)]="usuarioLogin.email" class="form-control" type="text" name="usuario" id="usuario"
+              placeholder="Seu usuário">
+            </div>
+
+
+
+            <div class="form-row">
+              <i class="fas fa-eye"></i>
+              <label for="senha" class="form-label" for="input">Senha</label>
+              <input [(ngModel)]="usuarioLogin.senha" type='text' class="form-text" type="password" name="senha" id="senha"
+                placeholder="Sua senha">
+            </div>
+
+
+            <div class="form-row bottom">
+              <div class="form-check">
+                <input type="checkbox" id="remenber" name="remenber" value="remenber">
+                <label for="remenber">remenber me?</label>
+              </div>
+
+             
+            </div>
+            <div class="form-row button-login">
+              <button class="btn btn-login" (click)="entrar()">Entrar <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- register -->
+    <div class="register">
+      <i class="fas fa-user-circle"></i>
+      <strong>Create account!</strong>
+      <form>
+        <fieldset>
+          <div class="form">
+            <div class="form-row">
+              <i class="fas fa-user"></i>
+              <label class="form-label" for="input" >Nome</label>
+              <input type="text" class="form-text" placeholder="enter your name">
+            </div>
+
+
+            <div class="form-row">
+              <i class="fas fa-envelope"></i>
+              <label class="form-label" for="input">E-mail</label>
+              <input class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu email"
+              [(ngModel)]="usuario.email">
+            </div>
+
+
+            <div class="form-row">
+              <i class="fas fa-lock"></i>
+              <label class="form-label" for="input">Password</label>
+              <input (input)="confirmSenha($event)"
+              type="password"
+              id="form3Example4c"
+              class="form-control">
+            </div>
+
+            <div class="form-row">
+              <i class="fas fa-lock"></i>
+              <label for="confirmSenha" class="form-label" for="input">Password</label>
+              <input [(ngModel)]="usuario.senha"
+              class="form-control"
+              type="password"
+              name="confirmSenha"
+              id="confirmSenha"
+              placeholder="Confirme a senha">
+            </div>
+
+
+            <div class="form-row button-login">
+              <button
+                      type="submit"
+                      class="btn btn-primary btn-lg"
+                      (click)="cadastrar()"
+                    >
+                      Cadastrar
+                    </button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
