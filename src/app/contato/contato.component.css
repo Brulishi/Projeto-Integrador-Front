@@ -1,7 +1,22 @@
+#img-bg {
+  background-image: url("https://i.imgur.com/Qnc9Fge.png");
+
+  background-position: center;
+  min-height: 30vh;
+  min-width: 80vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 200px;
+  background-color: #4158d0;
+}
+
+
+
+
 #team {
   padding: 60px 0;
   text-align: center;
-  background-color: #6f85ff;
+  background-color: #4158d0;
   color: #fff;
 }
 #team h2 {
